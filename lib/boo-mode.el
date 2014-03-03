@@ -116,7 +116,7 @@
         (,(rx symbol-start (or "import" "from" "namespace")
               symbol-end) . boo-namespace-face)
 
-        (,(rx symbol-start (or "true" "false" "null" "self")
+        (,(rx symbol-start (or "true" "false" "null" "self" "super")
               symbol-end) . boo-constant-face)
 
         (,(rx symbol-start (or "try" "except" "ensure" "while"
