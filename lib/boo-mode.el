@@ -2,6 +2,12 @@
 
 ;; Keywords: languages, boo
 
+;; Inspired by a boo mode by Patrick Sullivan
+;;   https://github.com/algoterranean/boo-mode
+;;
+;; and the official python mode by the python mode team:
+;;   https://github.com/emacsmirror/python-mode
+
 ;; Copyright (C) 2014 Rodrigo B. de Oliveira <rbo@acm.org>
 
 ;; This program is free software; you can redistribute it and/or modify
