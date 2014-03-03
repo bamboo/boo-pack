@@ -9,7 +9,7 @@ Provides syntax highlighting and simple auto indentation for boo source files.
 ## Installation
 
 git clone into your ~/.live-packs directory and add
-```elisp
+```lisp
 (live-add-packs '(~/.live-packs/boo-pack))
 ```
 to your ~/.emacs-live.el
