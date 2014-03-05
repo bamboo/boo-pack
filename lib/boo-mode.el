@@ -110,7 +110,7 @@
 
         (,(rx symbol-start (or "required" "property" "assert"
                                "match" "case" "otherwise"
-                               "ometa")
+                               "ometa" "macro")
               symbol-end) . boo-builtin-face)
 
         (,(rx symbol-start (or "import" "from" "namespace")
@@ -124,12 +124,12 @@
               symbol-end) . boo-control-flow-face)
 
         ;; functions
-        (,(rx symbol-start "def" (1+ space) (group (1+ (or word ?_))))
+        (,(rx symbol-start (or "def" "macro") (1+ space) (group (1+ (or word ?_))))
          (1 font-lock-function-name-face))
 
         ;; types
         (,(rx symbol-start
-              (group (or "class" "interface" "struct" "enum"))
+              (group (or "class" "interface" "struct" "enum" "ometa"))
               (1+ space)
               (group (1+ (or word ?_))))
          (1 boo-def-face) (2 boo-class-name-face))
